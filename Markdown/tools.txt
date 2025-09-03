@@ -1,0 +1,12 @@
+completed  
+magic
+icarus
+yosys
+klayout
+git
+
+not
+open lane -issue
+open sta -issue
+skywater-issue
+netgen -issue
