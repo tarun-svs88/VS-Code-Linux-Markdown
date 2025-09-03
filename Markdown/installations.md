@@ -1,6 +1,17 @@
-## Installations
+## Installations on Ubuntu
+Ubuntu Version - Ubuntu 24.04.2 LTS
+![](ubuntuv.png)
 
-###  1)Magic
+
+### 1)Git+Github
+
+**command** - sudo apt install git -y
+![](git+github.png)
+**version check** - git --version
+![](git+githubv.png)
+
+
+###  2)Magic
 **command** - sudo apt install magic -y
 ![](magic.png)
 
@@ -12,22 +23,16 @@
 **version check command**- magic -dnull -noconsole
 ![](magicv.png)
 
-### 2)Iverilog+GTKWave
+### 3)Iverilog+GTKWave
 
 **command** - sudo apt install iverilog gtkwave -y
 ![](iverilog+gtk.png)
 
-**version check**-iverilogv.png  
-gtkwavev.png
+**version check**-iverilog -v
+                    gtkwave -v
 ![](iverilogv.png)
 ![](gtkwavev.png)
 
-### 3)Git+Github
-
-**command** - sudo apt install git -y
-![](git+github.png)
-**version check** - git --version
-![](git+githubv.png)
 
 ### 4)Yosys
 
