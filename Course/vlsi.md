@@ -128,7 +128,7 @@ Quantum computing & neuromorphic chips
 
  So, Moore’s Law is not dead, but it’s evolving: progress continues through new design and materials, not just transistor scaling.
 
- **III)Trends in VLSI**  
+ ### III)Trends in VLSI
  **1.VLSI Scaling Trends (130 nm → 3 nm)**  
 Scaling in VLSI refers to shrinking the minimum feature size (technology node) of transistors. Each new node improves PPA (Power, Performance, Area).
 
@@ -174,7 +174,7 @@ PPA = Power, Performance, Area, the holy trinity of VLSI optimization.
 - Efabless: A community-driven platform that provides design tools and shuttle runs for fabricating open-source chips using Sky130 and other processes.
 
 
-**IV)SoC vs ASIC vs FPGA**
+### IV)SoC vs ASIC vs FPGA
 | **Feature**        | **SoC** (System-on-Chip)             | **ASIC** (Application-Specific IC)   | **FPGA** (Field-Programmable Gate Array) |
 | ------------------ | ------------------------------------ | ------------------------------------ | ---------------------------------------- |
 | **Flexibility**    | Medium (fixed + configurable blocks) | Low (fully custom, fixed function)   | Very High (reprogrammable)               |
@@ -185,3 +185,60 @@ PPA = Power, Performance, Area, the holy trinity of VLSI optimization.
 
     - NRE Cost (Non-Recurring Engineering Cost)
     NRE cost is the one-time upfront cost required for the design, development, and setup of a new product (like an IC, SoC, or ASIC).
+
+### Industry View: ASIC vs FPGA vs SoC
+
+**1. ASICs (Application-Specific Integrated Circuits)**  
+- **Dominance:**  
+    - High-volume products (CPUs, GPUs, AI accelerators, networking chips).  
+    - Used by giants companieslike Intel, AMD, Nvidia, Qualcomm.
+
+- **Why:**  
+    - Very high performance + low unit cost at scale.
+    - Best suited when millions of chips are produced (smartphones, data centers).
+
+- **Limitation:**  
+    -Extremely high NRE cost (tens of millions of dollars).  
+    -Long time-to-market.
+
+- **Industry Trend:**
+    - Still dominant in mass-market consumer electronics and servers.
+
+    - Specialized ASICs for AI/ML (TPUs, NPUs), 5G modems, GPUs are booming.
+
+**2. FPGAs (Field-Programmable Gate Arrays)**
+- **Dominance:**  
+    - Low-to-medium volume markets where flexibility matters (defense, aerospace, prototyping, industrial automation).  
+    - Key players: Xilinx (AMD), Intel (Altera), Lattice, Microchip.
+
+- **Why:**  
+    - Reprogrammable → fast prototyping, design changes possible.  
+    - Short time-to-market.
+
+- **Limitation:**
+    - Slower and more power-hungry than ASICs.  
+    - Higher cost per unit.
+
+**Industry Trend:**
+
+Popular in rapid prototyping, 5G infrastructure, automotive ADAS, aerospace/defense.
+
+Moving towards AI acceleration at the edge (adaptive computing).
+
+**3. SoCs (System-on-Chip)**
+
+- **Dominance:**
+    - Mobile & consumer electronics → smartphones, tablets, IoT devices.  
+    - Used by Apple, Qualcomm, Samsung, MediaTek.
+
+- **Why:**  
+    - Combines CPU, GPU, DSP, memory, and peripherals in a single chip.  
+    - Balanced PPA (Power, Performance, Area) + reduced system cost.
+
+- **Limitation:**  
+    - Still high NRE, but lower than full custom ASICs (thanks to reusable IP blocks).  
+    - Less flexible compared to FPGAs.
+
+- **Industry Trend:**
+    -Dominant in consumer devices.  
+    -Growing in IoT, automotive (ADAS, infotainment), and wearables.
