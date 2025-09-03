@@ -219,11 +219,9 @@ PPA = Power, Performance, Area, the holy trinity of VLSI optimization.
     - Slower and more power-hungry than ASICs.  
     - Higher cost per unit.
 
-**Industry Trend:**
-
-Popular in rapid prototyping, 5G infrastructure, automotive ADAS, aerospace/defense.
-
-Moving towards AI acceleration at the edge (adaptive computing).
+- **Industry Trend:**  
+    - Popular in rapid prototyping, 5G infrastructure, automotive ADAS, aerospace/defense.  
+    - Moving towards AI acceleration at the edge (adaptive computing).
 
 **3. SoCs (System-on-Chip)**
 
