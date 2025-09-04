@@ -240,3 +240,14 @@ PPA = Power, Performance, Area, the holy trinity of VLSI optimization.
 - **Industry Trend:**
     -Dominant in consumer devices.  
     -Growing in IoT, automotive (ADAS, infotainment), and wearables.
+
+### 🧪Lab/Assignment Ideas  
+🔹 Survey: Top 5 ASIC design companies in India  
+🔹 Draw Moore’s Law trend line using actual transistor data  
+🔹 Compare ASIC vs FPGA cost for 10,000-unit production  
+
+
+### 📘 Recommended Reading
+📖 CMOS VLSI Design by Weste & Harris – Chapter 1  
+📖 Intel's Moore’s Law Infographic  
+📖 Intro to OpenLane and eFabless documentation
