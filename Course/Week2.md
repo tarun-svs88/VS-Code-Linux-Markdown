@@ -38,3 +38,21 @@ Week 2 Topic: VLSI Design Abstraction Levels**
 - Instead of redesigning every module (e.g., USB, DDR controller), companies reuse IP cores.
 - Abstraction allows these IPs to be plugged into larger SoCs without worrying about transistor-level details.
 - Saves time, money, and reduces risk.
+
+>What are IP Blocks in VLSI?
+>>IP stands for Intellectual Property.
+In VLSI, an IP block is a pre-designed, reusable circuit or module that performs a specific function.
+Instead of designing everything from scratch, companies license or reuse these blocks in their SoCs.
+
+**2. Abstraction Levels in VLSI**
+
+| Level| Description in brief|
+|---|---|
+| Device Level| MOSFET behavior |
+| Transistor Level| CMOS schematic |
+| Logic Gate Level| Gates and flip-flops |
+| Register Transfer Level (RTL)| Registers + Datapath + Control (HDL) |
+| Layout Level| Physical mask design (GDSII, LEF/DEF) |
+| System Level| Algorithm to Architecture (CPU, DSP, SoC) |
+
+
