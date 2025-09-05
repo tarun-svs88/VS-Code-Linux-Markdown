@@ -42,11 +42,6 @@ This was the list of computer/laptop oriented flagship model silicon chips relea
 | **2019** | Xeon Platinum 9200 (56-core, server)   | \~10200 million              |
 | **2020** | Core i9-10900K (Comet Lake, 10-core)   | \~10300 million (incl. iGPU) |
 
-
-
-
-
-
 ```vega-lite
 {
   "description": "Test Line Chart",
