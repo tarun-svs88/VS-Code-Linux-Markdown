@@ -1,4 +1,7 @@
-## Course
+## Semester 1 – Subject 1 – Week 1(S1 1S W1)
+
+**Subject: VLSI Design Fundamentals
+Week 1 Topic: Moore’s Law, VLSI Trends, SoC vs ASIC vs FPGA**
 
 ### I)Introduction to VLSI  
 **1. What is VLSI?**
