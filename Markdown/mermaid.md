@@ -70,18 +70,21 @@ class Ram,rom mu
 ```
 /// A-->B(combinational) and A-->combinational the output is same  but we are wrapping the word combinational into B for reusubality ,we  can access the combinational by writing B instead of writing combinational again.
 
-///if you want to add colour to a block the syntax is  
+///if you want to add colour to a block the syntax is    
 style variable/text fill:color name
 
 /// if you want to add color to text and block ,the syntax is   
 sytle variable/text fill:color name , color :color name  
+
 ex: style A fill :pink,color:red   
  //here the block will be filled with pink and text with red.  
-**use color and not colour** 
+
+>use color and not colour
 
 ///if you want to add colour to multiple blocks,texts or variable we can use class function .The syntax for adding is  
 classDef classname  fill:color name  
-class variables/text classname   
+class variables/text classname 
+
 ex: classDef tarun fill:grey ,color:yellow  
      class a,b,c tarun  
      // here class name is tarun  so in second line we are calling the function class to fill the color whenever class is called with the class name 
@@ -131,6 +134,7 @@ boys - (40/76)*100= 53%
     classDef green fill:green,stroke:black
     classDef blue fill:blue,stroke:black
 ```
+
 ### bar graph
 ```mermaid
 
@@ -166,6 +170,7 @@ $$e^{i\pi}+1=0$$
 $$\int_0^\infty x^2e^{-x}dx=2$$
 $$f(x)=\sum_{n=0}^\infty \frac{f(^n)(a)}{n!}(x-a)^n$$
 $$x= \frac{-b\pm \sqrt{b^2-4ac}}{2a} $$
+
 
 ## basic wavefrom 
 ```wavedrom

@@ -77,9 +77,22 @@ This was the list of computer/laptop oriented flagship model silicon chips relea
 
 **3. Differentiate between ASIC, SoC, and FPGA with two real-world examples each**
 
+| S No.| Feature | ASIC | SOC | FPGA |
+|---|---|---|---|---|
+1|Fullform | Application Specific IC | System on Chip |Field Programamble Gate Array
+2|Performance|Very High optimised for its purpose|Very High|Lower than ASIC/SoC
+3|Power Efficiency | Very Efficient |Efficient|Less Efficient
+4|Cost per unit |Low (when produced in high volumes)|Low (when produced in high volumes)|Higher per unit but no upfornt silicon fabrication cost
+5|Programmability|Not Programmable mostly|Not Programmable mostly|Programmable Mostly
+6|Examples|1)Google TPU (Tensor Processing Unit) → a custom chip designed only for AI/ML workloads.  2)Intel Nervana (AI accelerator) or Broadcom network switch ASICs → optimized for very high-speed packet processing.|1)Apple M1/M2 chip → CPU, GPU, AI engine, memory controller all integrated on a single die.         2)Qualcomm Snapdragon processors → Used in smartphones, combining CPU, GPU, modem, DSP, etc.|1)Xilinx/Intel FPGA boards → Used in 5G base stations for fast prototyping  2)NASA space missions → FPGAs are used since they can be reprogrammed in orbit if logic changes are needed.
+
+
+
+
+
 **4. Explain the term 'Design Abstraction' in VLSI with a brief description of each abstraction level**
 
-**Abstraction Levels in VLSI Design
+**Abstraction Levels in VLSI Design**
 
 **i)System Level (Behavioral / Algorithmic Level)**
 
