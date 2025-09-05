@@ -30,17 +30,17 @@ This was the list of computer/laptop oriented flagship model silicon chips relea
 | **2007** | Core 2 Duo (Penryn)                    | \~410 million               |
 | **2008** | Core i7-920 (Nehalem)                  | \~731 million               |
 | **2009** | Core i7-975 Extreme (Nehalem)          | \~731 million (quad)        |
-| **2010** | Core i7-980X (Gulftown, 6-core)        | \~1.17 billion              |
-| **2011** | Core i7-2600K (Sandy Bridge)           | \~1.16 billion              |
-| **2012** | Core i7-3770K (Ivy Bridge)             | \~1.4 billion               |
-| **2013** | Core i7-4960X (Ivy Bridge-E)           | \~1.86 billion              |
-| **2014** | Core i7-5960X (Haswell-E, 8-core)      | \~2.6 billion               |
-| **2015** | Core i7-6700K (Skylake)                | \~1.75 billion              |
-| **2016** | Core i7-6950X (Broadwell-E, 10-core)   | \~3.2 billion               |
-| **2017** | Xeon Skylake-SP (server)               | \~7.1 billion               |
-| **2018** | Xeon Cascade Lake-AP (server, 48-core) | \~8.4 billion               |
-| **2019** | Xeon Platinum 9200 (56-core, server)   | \~10.2 billion              |
-| **2020** | Core i9-10900K (Comet Lake, 10-core)   | \~10.3 billion (incl. iGPU) |
+| **2010** | Core i7-980X (Gulftown, 6-core)        | \~1170 million              |
+| **2011** | Core i7-2600K (Sandy Bridge)           | \~1160 million              |
+| **2012** | Core i7-3770K (Ivy Bridge)             | \~1400 million               |
+| **2013** | Core i7-4960X (Ivy Bridge-E)           | \~1860 million              |
+| **2014** | Core i7-5960X (Haswell-E, 8-core)      | \~2600 million               |
+| **2015** | Core i7-6700K (Skylake)                | \~1750 million              |
+| **2016** | Core i7-6950X (Broadwell-E, 10-core)   | \~3200 million               |
+| **2017** | Xeon Skylake-SP (server)               | \~7100 million               |
+| **2018** | Xeon Cascade Lake-AP (server, 48-core) | \~8400 million               |
+| **2019** | Xeon Platinum 9200 (56-core, server)   | \~10200 million              |
+| **2020** | Core i9-10900K (Comet Lake, 10-core)   | \~10300 million (incl. iGPU) |
 
 
 
@@ -53,10 +53,15 @@ This was the list of computer/laptop oriented flagship model silicon chips relea
   "data": {
     "values": [
       {"year": 2000, "transistors": 42},
-      {"year": 2002, "transistors": 55,}
-      {"year": 2005, "transistors": 230},
+      {"year": 2002, "transistors": 55},
+      {"year": 2004, "transistors": 125},
+      {"year": 2006, "transistors": 291},
+      {"year": 2008, "transistors": 731},
       {"year": 2010, "transistors": 1170},
-      {"year": 2015, "transistors": 1750},
+      {"year": 2012, "transistors": 1400},
+      {"year": 2014, "transistors": 2600},
+      {"year": 2016, "transistors": 3200},
+      {"year": 2018, "transistors": 4800},
       {"year": 2020, "transistors": 10300}
     ]
   },
@@ -71,3 +76,76 @@ This was the list of computer/laptop oriented flagship model silicon chips relea
 
 
 **3. Differentiate between ASIC, SoC, and FPGA with two real-world examples each**
+
+**4. Explain the term 'Design Abstraction' in VLSI with a brief description of each abstraction level**
+
+**Abstraction Levels in VLSI Design
+
+**i)System Level (Behavioral / Algorithmic Level)**
+
+- Describes the overall functionality of the system without considering hardware details.  
+- Uses algorithms, data flow, and input–output behavior.  
+- Specified in high-level languages like C, MATLAB, or SystemC.  
+
+Example: defining that a chip should perform video compression.
+
+**ii)Register Transfer Level (RTL)**
+
+- Specifies the design in terms of data transfer between registers and the operations performed on that data.  
+- Describes how data flows through the system clock by clock.  
+- Written using HDLs (VHDL, Verilog, SystemVerilog).
+
+Example: “On each clock cycle, add A and B, and store result in register R.”
+
+**iii)Logic Level (Gate Level)**
+
+- Describes the design using logic gates and flip-flops (AND, OR, NOT, DFF, etc.).  
+- RTL is synthesized into this level.  
+- Timing, Boolean equations, and logic minimization are considered.
+
+Example: an adder implemented with XOR, AND, and OR gates.
+
+**iv)Circuit Level (Transistor Level)**
+
+- Each logic gate is represented by its transistor implementation (using CMOS, pass transistor logic, etc.).  
+- Electrical behavior such as capacitance, current, and power are considered.
+
+Example: a NAND gate implemented with 4 MOS transistors.
+
+**v)Physical Level (Layout / Geometrical Level)**
+
+- Deals with the actual geometrical representation of the circuit on silicon.  
+- Includes placement of transistors, interconnects, routing, layers, and mask generation.  
+- Output is the layout (GDSII file) used for fabrication.
+
+Example: polygons representing n-well, p-well, metal, polysilicon layers.
+
+>**Overview**
+System Level - ***Functionality*** using ***software languages without hardware*** consideration  
+
+>Register Transfer Level -  ***Data transfer*** between ***Registers*** on every ***clock cycle***
+
+>Gate Level - ***logic gates and flip-flops***
+
+>Transistor level - ***logic gate***  represented by  ***transistor implementation***
+
+>Physical Level - ***Placement of transistors,routing,masking*** etc
+
+**5. What challenges threaten the continuation of Moore’s Law?**
+
+According to Moore the transistor count gets doubled for a life pan of every two years Due to this many problems arose with reduced or same price per transistor on a silicon chip
+
+i) Due to increase in transistor count ,***The design became too complex to test and verify***
+ii)Although Computation power and performance increased , but the wiring and the interconnections became harder
+iii)As the no. of transistors increased , The power usage by transistors became more and the heat dissipated by the transistors was more.
+iv)Hence Cooling chambers strips or vapour cooling or fans ecame a need 
+v) Moore's Law became a standard for growing companies to design chips with increased no. of transistors nearly doubling every two years pushing every company to design their with more count.
+vi)The photolithoraphy uses UV Lithography but as the number of transistors on a small chip increased the printing using UV light became extremely difficult 
+vii)Hence Extreme UV Lithography need to be used which is very expensive
+
+> UV photolithoraphy 
+Wavelength: 13.5 nm (very short)-Ultraviolet, >248 nm
+Early chips (before ~250 nm nodes) used UV light.
+
+>Extreme ultraviolet (EUV) lithography (13.5 nm wavelength)Wavelength: 13.5 nm (very short).
+Introduced at 7 nm and 5 nm nodes (u
