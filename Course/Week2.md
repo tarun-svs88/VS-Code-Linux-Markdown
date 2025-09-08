@@ -67,7 +67,7 @@ Instead of designing everything from scratch, companies license or reuse these b
 | **Layout**      | Physical design with diffusion, polysilicon, and metal layers drawn in CAD tools (Magic, Cadence). |
 
 
-### 4 Importance of Hierarchical Design
+### 4. Importance of Hierarchical Design
 
 
 **1 Encourages Reuse (e.g., IP cores)**
@@ -89,10 +89,8 @@ Example: A verified ALU block at RTL can be synthesized independently, then inte
 **3. Easier to Verify and Debug Incrementally**
 
 - If the whole system was designed as a flat structure, debugging would be extremely difficult.
-
 - By keeping a hierarchy of modules, each sub-block can be tested separately (unit testing).
 - Errors can be located at the block level without checking the entire system.
-
 Example: If addition in ALU is wrong, you only check the adder sub-block instead of re-verifying the entire CPU.
 
 4. Scalability
@@ -158,12 +156,12 @@ Example: Checking that the RTL ALU and the gate-level ALU both give the same out
 
 ### Lab/Assignment Ideas
 
-🔹 Draw abstraction hierarchy for a 4-function calculator chip.
-🔹 Label abstraction levels in a multiplexer’s views (RTL, gates, layout).
+🔹 Draw abstraction hierarchy for a 4-function calculator chip.  
+🔹 Label abstraction levels in a multiplexer’s views (RTL, gates, layout).  
 🔹 Explore an OpenLane synthesized netlist and identify logic abstraction.
 
 ### Suggested Reading
 
-🔹 CMOS VLSI Design – Chapter 2 (Weste & Harris)
-🔹 Digital Design by Morris Mano – Logic Abstraction
+🔹 CMOS VLSI Design – Chapter 2 (Weste & Harris)  
+🔹 Digital Design by Morris Mano – Logic Abstraction  
 🔹 OpenLane Flow Overview – Synthesis to GDS
