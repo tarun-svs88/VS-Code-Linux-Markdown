@@ -1,4 +1,4 @@
-module 8bitalu(
+module alu8bit(
     input  [7:0] A,
     input  [7:0] B,
     input  [2:0] s,       
@@ -7,7 +7,7 @@ module 8bitalu(
 );
 
 always @(*) begin
-    carry= 0; 
+    carry = 0; 
     
     case (s)
         3'b000: {carry, y} = A + B;      
