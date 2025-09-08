@@ -189,7 +189,7 @@ PPA = Power, Performance, Area, the holy trinity of VLSI optimization.
     - NRE Cost (Non-Recurring Engineering Cost)
     NRE cost is the one-time upfront cost required for the design, development, and setup of a new product (like an IC, SoC, or ASIC).
 
-### Industry View: ASIC vs FPGA vs SoC
+### V) Industry View: ASIC vs FPGA vs SoC
 
 **1. ASICs (Application-Specific Integrated Circuits)**  
 - **Dominance:**  
