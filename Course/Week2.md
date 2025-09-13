@@ -56,15 +56,19 @@ Instead of designing everything from scratch, companies license or reuse these b
 | System Level| Algorithm to Architecture (CPU, DSP, SoC) |
 
 
-**3. Example: Full Adder**
+**3. Example: Full Adder**(high to low)
 
-| **Abstraction** |**Representation**                                                                                 |
-| --------------- | -------------------------------------------------------------------------------------------------- |
-| **System**      | This block adds 3 inputs (A, B, Cin) and produces outputs (SUM, Cout).                             |
-| **RTL**         | `assign SUM  = A ^ B ^ Cin;` <br> `assign Cout = (A & B) \| (B & Cin) \| (A & Cin);`               |
+| **Abstraction** |**Representation**   
+| ---             | ---|
+| **System**      | This block adds 3 inputs (A, B, Cin) and produces outputs (SUM, Cout).  
+| **Architecture**|Describes functionality in block diagrams: Full Adder = (A, B, Cin → SUM, Cout).
+| **RTL**         | `assign SUM  = A ^ B ^ Cin;` <br> `assign Cout = (A & B) \| (B & Cin) \| (A & Cin);`         
 | **Gate**        | Implemented using XOR, AND, OR logic gates connected together.                                     |
 | **Transistor**  | Each gate (XOR, AND, OR) is built using CMOS transistors (e.g., XOR needs \~8–12 transistors).     |
 | **Layout**      | Physical design with diffusion, polysilicon, and metal layers drawn in CAD tools (Magic, Cadence). |
+|**Device**       |MOSFET operation|
+
+RTL / Dataflow 
 
 
 ### 4. Importance of Hierarchical Design
